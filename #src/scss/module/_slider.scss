@@ -1,0 +1,93 @@
+// СТИЛИ ДЛЯ СЛАЙДА
+.slider-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.header-slide{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all ease 0.8s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    opacity: 0;
+    .bg{ 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,0.3);
+        z-index: 2;
+    }
+    h1,h2{
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-size: 55px;
+        line-height: 70px;
+        font-weight: bold;
+        width: 50%;
+        position: absolute;
+        top: 35%;
+        left: 15%;
+        z-index: 3;
+        span{
+            color: #1dc8d9 ;
+        }
+    }
+}
+// Активный слайд
+.slide-active{
+    opacity: 1;
+}
+
+// БУЛЛЕТЫ
+.header-pagination{
+    position: absolute;
+    right: 10%;
+    top: 40%;
+    z-index: 4;
+    width: 20px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+}
+.header-dot{
+    display: block;
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    background: white;
+    cursor: pointer;
+}
+// Активный буллет
+.dot-active{
+    background-color: #1dc8d9;
+}
+
+// ФОН ДЛЯ СЛАЙДОВ
+.slide-one{
+    background-image: url(./../images/slide-1.jpg) ;
+}
+.slide-two{
+    background-image: url(./../images/slide-2.jpg);
+}
+.slide-three{
+    background-image: url(./../images/slide-3.jpg);
+}
+.slide-four{
+    background-image: url(./../images/slide-4.jpg);
+}
+.slide-five{
+    background-image: url(./../images/slide-5.jpg) ;
+}
+
+
