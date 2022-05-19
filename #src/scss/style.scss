@@ -1,46 +1,21 @@
 @import "module/reset"; //--------- Срос стилей ----------
 @import "module/vars";  //---------- Переменные - Шрифты и Цвета --------------
 @import "module/header-nav"; //------------- Навигация ---------------
-@import "module/slider"; //---------- Свои стили для Свайп слайдер  -------------
-
-
-.recomendation__slider{
-    width: 400px;
-    height: 450px;
-    // overflow: hidden;
-    display: flex;
-    &_item{
-        min-width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .item-one{
-        background-image: url(./../images/gallery-1.jpg);
-    }
-    .item-two{
-        background-image: url(./../images/gallery-2.jpg);
-    }
-    .item-three{
-        background-image: url(./../images/gallery-3.jpg);
-    }
-    .item-four{
-        background-image: url(./../images/gallery-4.jpg);
-    }
-    .item-five{
-        background-image: url(./../images/gallery-5.jpg);
-    }
-    .item-six{
-        background-image: url(./../images/gallery-6.jpg);
-    }
-}
-
-
-
+@import "module/index/header-slider"; //---------- Свои стили для Свайп слайдер  -------------
+@import "module/index/recomendatoin"; //---------- СЕКЦИЯ RECOMDATION  -------------
+@import "module/index/awards"; //---------- СЕКЦИЯ AWARDS  -------------
 
 
 
 
 
 @import "module/footer"; //---------------- Футер --------------
+@import "module/btnup"; //---------------- Фиксированная кнопка "Вверх" внизу сраницы --------------
+
+
+
+
+
+
+
+

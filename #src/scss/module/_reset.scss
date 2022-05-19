@@ -14,8 +14,8 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
+    font-family: inherit;
+    font-size: inherit;
     vertical-align: baseline;
 }
 article, aside, details, figcaption, figure,
@@ -48,13 +48,15 @@ table {
 
 
 body{
-    font-size: 10px;
+    font-size: 14px;
     font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 .page{
     max-width: 1400px;
     overflow: hidden;
     margin: 0 auto;
+    position: relative;
 }
 .container{
     max-width: 1060px;

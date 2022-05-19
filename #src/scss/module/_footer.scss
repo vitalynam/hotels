@@ -1,0 +1,126 @@
+.footer{
+    background-image: url(./../images/footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    .container{
+        position: relative;
+    }
+}
+.footer__section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 0;
+}
+.footer__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #ccc;
+    li{
+        margin-bottom: 10px;
+        a{
+            color: #ccc;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+}
+
+.footer__subscribe{
+    h4{
+        font-size: 35px;
+        font-weight: 600;
+    }
+    p{
+        font-size: 14px;
+        margin: 15px 0;
+    }
+    form{
+        margin-bottom: 40px;
+        input{
+            background: #333;
+            color: white;
+            font-size: 14px;
+            padding: 15px;
+            width: 80%;
+            border: none;
+            border-radius: 5px;
+        }
+        button{
+            padding: 14px 30px;
+            background-color: #0bb46d;
+            border: none;
+            outline: none;
+            color: #FFF;
+            text-transform: uppercase;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all ease-in-out 0.4s;
+            &:hover{
+                background-color: #0a9683;
+            }
+        }
+    }
+}
+
+.footer__social{
+    position: absolute;
+    bottom: 65px;
+    left: 30px;
+    ul{
+        display: flex;
+        li{
+            a{
+                background-image: url(./../images/img-sprite.png);
+                background-repeat: no-repeat;
+                display: block;
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}
+
+.facebook{
+    background-position: 0 0;
+    &:hover{
+        background-position: 0 -50px;
+    }
+}
+.twitter{
+    background-position: -50px 0;
+    &:hover{
+        background-position: -50px -50px;
+    }
+}
+.googleplus{
+    background-position: -100px 0;
+    &:hover{
+        background-position: -100px -50px;
+    }
+}
+.instagram{
+    background-position: -150px 0;
+    &:hover{
+        background-position: -150px -50px;
+    }
+}
+.youtube{
+    background-position: -200px 0;
+    &:hover{
+        background-position: -200px -50px;
+    }
+}
+.music{
+    background-position: -250px 0;
+    &:hover{
+        background-position: -250px -50px;
+    }
+}

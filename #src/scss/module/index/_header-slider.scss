@@ -43,10 +43,6 @@
         }
     }
 }
-// Активный слайд
-.slide-active{
-    opacity: 1;
-}
 
 // БУЛЛЕТЫ
 .header-pagination{
@@ -68,10 +64,7 @@
     background: white;
     cursor: pointer;
 }
-// Активный буллет
-.dot-active{
-    background-color: #1dc8d9;
-}
+
 
 // ФОН ДЛЯ СЛАЙДОВ
 .slide-one{
@@ -90,4 +83,12 @@
     background-image: url(./../images/slide-5.jpg) ;
 }
 
+// Активный буллет
+.dot-active{
+    background-color: #1dc8d9;
+}
 
+// Активный слайд
+.slide-active{
+    opacity: 1;
+}
