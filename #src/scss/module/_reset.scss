@@ -14,8 +14,6 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: inherit;
-    font-size: inherit;
     vertical-align: baseline;
 }
 article, aside, details, figcaption, figure,
@@ -65,8 +63,24 @@ body{
     padding-right: 30px;
 }
 
+button, input, a, h1, h2, h3, h4, h5, h6{
+    font-family: inherit;
+    font-size: inherit;
+}
 a{
     text-decoration: none;
     cursor: pointer;
     transition: 0.3s all;
+    
+}
+p{
+    color: #777;
+    line-height: 23px;
+    font-size: 15px;
+}
+h2{
+    font-size: 41px;
+    font-weight: 700;
+    color: #1dc8d9;
+    text-align: center;
 }

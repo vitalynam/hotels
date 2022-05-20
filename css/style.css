@@ -14,8 +14,6 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: inherit;
-  font-size: inherit;
   vertical-align: baseline;
 }
 
@@ -71,11 +69,29 @@ body {
   padding-right: 30px;
 }
 
+button, input, a, h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-size: inherit;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
+}
+
+p {
+  color: #777;
+  line-height: 23px;
+  font-size: 15px;
+}
+
+h2 {
+  font-size: 41px;
+  font-weight: 700;
+  color: #1dc8d9;
+  text-align: center;
 }
 
 .header__nav {
@@ -334,11 +350,6 @@ a {
   margin-left: 120px;
   margin-top: 130px;
 }
-.recomendation__box h2 {
-  color: #1dc8d9;
-  font-size: 40px;
-  font-weight: 600;
-}
 .recomendation__box .box__galary {
   margin-top: 170px;
   margin-left: 200px;
@@ -373,9 +384,7 @@ a {
   background-color: #1dc8d9;
 }
 .recomendation__box .box__galary p {
-  color: black;
   margin-bottom: 40px;
-  font-size: 15px;
 }
 .recomendation__box .box__galary a {
   display: -webkit-box;
@@ -413,9 +422,6 @@ a {
   margin-bottom: 100px;
 }
 #awards .awards__title h2 {
-  font-size: 41px;
-  font-weight: 700;
-  color: #1dc8d9;
   text-align: center;
 }
 #awards .container {
@@ -474,6 +480,60 @@ a {
 .awards_cart ul li h4 {
   font-size: 18px;
   font-weight: bold;
+}
+
+.service__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.service__section .service__text {
+  padding-top: 100px;
+}
+.service__section .service__text h2 {
+  margin-bottom: 50px;
+}
+.service__section .service__text p {
+  text-align: center;
+}
+.service__section .service__img {
+  width: 450px;
+  height: 450px;
+  margin-top: -55px;
+}
+.service__section .service__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.service__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 80px 0;
+}
+.service__box_cart {
+  text-align: center;
+}
+.service__box_cart h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  padding-bottom: 10px;
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 4px solid #1dc8d9;
 }
 
 .footer {
@@ -547,6 +607,9 @@ a {
   border: none;
   border-radius: 5px;
 }
+.footer__subscribe form input:focus {
+  border: none;
+}
 .footer__subscribe form button {
   padding: 14px 30px;
   background-color: #0bb46d;
@@ -566,7 +629,7 @@ a {
 .footer__social {
   position: absolute;
   bottom: 65px;
-  left: 30px;
+  left: 47px;
 }
 .footer__social ul {
   display: -webkit-box;

@@ -52,6 +52,9 @@
             width: 80%;
             border: none;
             border-radius: 5px;
+            &:focus{
+                border: none;
+            }
         }
         button{
             padding: 14px 30px;
@@ -73,7 +76,7 @@
 .footer__social{
     position: absolute;
     bottom: 65px;
-    left: 30px;
+    left: 47px;
     ul{
         display: flex;
         li{
