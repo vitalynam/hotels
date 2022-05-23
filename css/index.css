@@ -1,52 +1,12 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+* {
   margin: 0;
   padding: 0;
   border: 0;
   vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
 html {
-  height: 100%;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -57,13 +17,12 @@ body {
 
 .page {
   max-width: 1400px;
-  overflow: hidden;
   margin: 0 auto;
   position: relative;
 }
 
 .container {
-  max-width: 1060px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
@@ -74,7 +33,16 @@ button, input, a, h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
 }
 
-a {
+ol, ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+a, button {
   text-decoration: none;
   cursor: pointer;
   -webkit-transition: 0.3s all;
@@ -92,6 +60,8 @@ h2 {
   font-weight: 700;
   color: #1dc8d9;
   text-align: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
 }
 
 .header__nav {
@@ -197,6 +167,7 @@ h2 {
   font-weight: bold;
   width: 50%;
   position: absolute;
+  margin-top: 0;
   top: 35%;
   left: 15%;
   z-index: 3;
@@ -284,6 +255,9 @@ h2 {
   height: 350px;
   overflow: hidden;
 }
+.recomendation__slider .item-zero {
+  background-image: url(./../images/gallery.jpg);
+}
 .recomendation__slider .item-one {
   background-image: url(./../images/gallery-1.jpg);
 }
@@ -299,9 +273,6 @@ h2 {
 .recomendation__slider .item-five {
   background-image: url(./../images/gallery-5.jpg);
 }
-.recomendation__slider .item-six {
-  background-image: url(./../images/gallery-6.jpg);
-}
 
 .recomendation_slider-absolute {
   position: absolute;
@@ -311,6 +282,9 @@ h2 {
 .recomendation_slider-absolute .recomendation__slider_two {
   width: 500px;
   height: 350px;
+}
+.recomendation_slider-absolute .item-six {
+  background-image: url(./../images/gallery-6.jpg);
 }
 .recomendation_slider-absolute .item-seven {
   background-image: url(./../images/gallery-7.jpg);
@@ -350,7 +324,7 @@ h2 {
   margin-left: 120px;
   margin-top: 130px;
 }
-.recomendation__box .box__galary {
+.recomendation__box .box__gallery {
   margin-top: 170px;
   margin-left: 200px;
   text-align: center;
@@ -365,7 +339,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
 }
-.recomendation__box .box__galary h4 {
+.recomendation__box .box__gallery h4 {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   text-transform: uppercase;
@@ -374,7 +348,7 @@ h2 {
   margin-bottom: 30px;
   position: relative;
 }
-.recomendation__box .box__galary h4::after {
+.recomendation__box .box__gallery h4::after {
   content: "";
   position: absolute;
   bottom: -20px;
@@ -383,10 +357,10 @@ h2 {
   height: 3px;
   background-color: #1dc8d9;
 }
-.recomendation__box .box__galary p {
+.recomendation__box .box__gallery p {
   margin-bottom: 40px;
 }
-.recomendation__box .box__galary a {
+.recomendation__box .box__gallery a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -404,7 +378,7 @@ h2 {
   -webkit-transition: all ease-in 0.2s;
   transition: all ease-in 0.2s;
 }
-.recomendation__box .box__galary a:hover {
+.recomendation__box .box__gallery a:hover {
   background-color: #1dc8d9;
   color: white;
 }
@@ -418,8 +392,8 @@ h2 {
   width: 100%;
 }
 #awards .awards__title {
-  padding-top: 150px;
-  margin-bottom: 100px;
+  padding-top: 35px;
+  margin-bottom: 50px;
 }
 #awards .awards__title h2 {
   text-align: center;
@@ -450,7 +424,7 @@ h2 {
           flex-direction: column;
   margin-bottom: 150px;
 }
-.awards_cart img {
+.awards_cart .awards__img_wrap {
   max-width: 125px;
   margin-bottom: 30px;
 }
@@ -491,10 +465,7 @@ h2 {
           justify-content: space-between;
 }
 .service__section .service__text {
-  padding-top: 100px;
-}
-.service__section .service__text h2 {
-  margin-bottom: 50px;
+  padding-top: 25px;
 }
 .service__section .service__text p {
   text-align: center;
@@ -503,10 +474,6 @@ h2 {
   width: 450px;
   height: 450px;
   margin-top: -55px;
-}
-.service__section .service__img img {
-  width: 100%;
-  height: 100%;
 }
 
 .service__box {
@@ -520,6 +487,11 @@ h2 {
 }
 .service__box_cart {
   text-align: center;
+}
+.service__box_cart .service__img_wrap {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
 }
 .service__box_cart h3 {
   font-size: 20px;
@@ -692,4 +664,7 @@ h2 {
   bottom: 2%;
   right: 2%;
   z-index: 1000;
+  -webkit-transition: all ease-in 0.6s;
+  transition: all ease-in 0.6s;
+  opacity: 0;
 }

@@ -1,0 +1,33 @@
+.ventures__box{
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.ventures__item{
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+
+    .ventures__img{
+        width: 285px;
+        height: 185px;
+    }
+    .ventures__info{
+        padding: 0 10px;
+        h3{
+            font-size: 20px;
+            text-align: left;
+            margin: 20px 0;
+            font-weight: 600;
+            color: #1dc8d9;
+        }
+        p{
+            font-size: 13px;
+            line-height: 25px;
+        }
+    }
+}

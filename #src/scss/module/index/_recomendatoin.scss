@@ -16,6 +16,9 @@
     width: 550px;
     height: 350px;
     overflow: hidden;
+    .item-zero{
+        background-image: url(./../images/gallery.jpg);
+    }
     .item-one{
         background-image: url(./../images/gallery-1.jpg);
     }
@@ -31,9 +34,7 @@
     .item-five{
         background-image: url(./../images/gallery-5.jpg);
     }
-    .item-six{
-        background-image: url(./../images/gallery-6.jpg);
-    }
+    
 }
 .recomendation_slider-absolute{
     position: absolute;
@@ -42,6 +43,9 @@
     .recomendation__slider_two{
         width: 500px;
         height: 350px;
+    }
+    .item-six{
+        background-image: url(./../images/gallery-6.jpg);
     }
     .item-seven{
         background-image: url(./../images/gallery-7.jpg);
@@ -82,7 +86,7 @@
         margin-top: 130px;
     }
     
-    .box__galary{
+    .box__gallery{
         margin-top: 170px;
         margin-left: 200px;
         text-align: center;

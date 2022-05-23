@@ -1,6 +1,5 @@
 @import "module/reset"; //--------- Срос стилей ----------
-@import "module/vars";  //---------- Переменные - Шрифты и Цвета --------------
-@import "module/header-nav"; //------------- Навигация ---------------
+@import "module/index/header-nav"; //------------- Навигация ---------------
 @import "module/index/header-slider"; //---------- Свои стили для Свайп слайдер  -------------
 @import "module/index/recomendatoin"; //---------- СЕКЦИЯ RECOMDATION  -------------
 @import "module/index/awards"; //---------- СЕКЦИЯ AWARDS  -------------

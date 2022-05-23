@@ -1,0 +1,1 @@
+const btnScrollUp=document.querySelector(".btn__up");window.onscroll=()=>{window.scrollY>300?btnScrollUp.style.opacity=1:window.scrollY<300&&(btnScrollUp.style.opacity=0)},btnScrollUp.onclick=()=>{window.scrollTo(0,0)};

@@ -7,8 +7,8 @@
     width: 100%;
     
     .awards__title{
-        padding-top: 150px;
-        margin-bottom: 100px;
+        padding-top: 35px;
+        margin-bottom: 50px;
         h2{
             text-align: center;
         }
@@ -27,7 +27,7 @@
     align-items: center;
     flex-direction: column;
     margin-bottom: 150px;
-    img{
+    .awards__img_wrap{
         max-width: 125px;
         margin-bottom: 30px;
     }

@@ -50,51 +50,36 @@ setInterval(headerNextSlide, 2500); // Автоматическое листан
 
 
 // -------НАСТРОЙКА СЛАДЙЕРОВ для RECOMENDATION -------
-const recomendationSlides = document.querySelectorAll('[data-name = "recomendation_one"]' ); // Получаем все слайды
 
-let recomendationCounter = 0;
+let counter = 0; // Создаем счетчик
+    
+const nextSlide = (items) => {  // создаем функцию для слайдера
+    
+    if(counter == items.length -1){ /// если счетчик = длине колличества слайдер
+        counter = 0;                      // обнуить его
+        
+        for(slide of items){
+            slide.classList.remove('recomendation-active'); // циклом проходим по всем элементам и удаляем класс ACTIVE
+        }
+        items[counter].classList.add('recomendation-active');   // Добавляем класс ACTIVE нужному элементу
 
-function recomendationActiveSlide (num){
-    for(slide of recomendationSlides){
-        slide.classList.remove('recomendation-active'); // циклом проходим по всем элементам и удаляем класс ACTIVE
     }
-    recomendationSlides[num].classList.add('recomendation-active');  // Добавляем класс ACTIVE нужному элементу
-}
+    else{       /// Иначе
+        counter++; // увеличеть счетчик на один
 
-function recomendationNextSlide(){
-    if(recomendationCounter == recomendationSlides.length -1){ // если счетчик = длине колличества слайдер
-        recomendationCounter = 0;                      // обнуить его
-        recomendationActiveSlide (recomendationCounter);            // и запустить слайд 
-    }else{
-        recomendationCounter++;
-        recomendationActiveSlide (recomendationCounter);
-    }
-}
+        for(slide of items){
+            slide.classList.remove('recomendation-active'); // циклом проходим по всем элементам и удаляем класс ACTIVE
+        }
+        items[counter].classList.add('recomendation-active');   // Добавляем класс ACTIVE нужному элементу
 
- setInterval(recomendationNextSlide, 2000);
-
- const recomendationSlidesTwo = document.querySelectorAll('[data-name = "recomendation_two"]' ); // Получаем все слайды
-
-let recomendationCounterTwo = 0;
-
-function recomendationActiveSlideTwo (num){
-    for(slide of recomendationSlidesTwo){
-        slide.classList.remove('recomendation-active'); // циклом проходим по всем элементам и удаляем класс ACTIVE
-    }
-    recomendationSlidesTwo[num].classList.add('recomendation-active');  // Добавляем класс ACTIVE нужному элементу
-}
-
-function recomendationNextSlideTwo(){
-    if(recomendationCounterTwo == recomendationSlidesTwo.length -1){ // если счетчик = длине колличества слайдер
-        recomendationCounterTwo = 0;                      // обнуить его
-        recomendationActiveSlideTwo (recomendationCounterTwo);            // и запустить слайд 
-    }else{
-        recomendationCounterTwo++;
-        recomendationActiveSlideTwo (recomendationCounterTwo);
     }
 }
 
- setInterval(recomendationNextSlideTwo, 2000);
+const slides = document.querySelectorAll('[data-name = "recomendation_one"]' ); // Получаем все слайды из первого слайда
+const slidesTwo = document.querySelectorAll('[data-name = "recomendation_two"]' ); // Получаем все слайды из второго слайда
+
+setInterval(nextSlide, 2000, slides);
+setInterval(nextSlide, 2000, slidesTwo);
 
 
 
@@ -108,6 +93,8 @@ function recomendationNextSlideTwo(){
 
 
 //----------НАСТРОЙКА МЕНЮ БУРГЕРА---------
+
+
 
 
 //----------НАСТРОЙКА МОДАЛКИ--------

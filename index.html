@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Hotels</title>
 </head>
 <body>
@@ -17,10 +17,10 @@
         </div>
         <ul class="nav__items">
             <li><a href="index.html" class="nav__link link-active">Домой</a></li>
-            <li><a href="#" class="nav__link">О Нас</a></li>
-            <li><a href="#" class="nav__link">Рестораны</a></li>
-            <li><a href="#" class="nav__link">Галерея</a></li>
-            <li><a href="#" class="nav__link">Бронирование</a></li>
+            <li><a href="aboutus.html" class="nav__link ">О Нас</a></li>
+            <li><a href="restoraunt.html" class="nav__link">Ресторан</a></li>
+            <li><a href="gallery" class="nav__link">Галерея</a></li>
+            <li><a href="booking.html" class="nav__link">Бронирование</a></li>
         </ul>
         
     </div>
@@ -88,16 +88,18 @@
     <div class="container">
         <div class="recomendation__box">
            <div class="recomendation__slider">
+                <div class="recomendation__slide item-zero recomendation-active" data-name="recomendation_one"></div>
                 <div class="recomendation__slide item-one" data-name="recomendation_one"></div>
                 <div class="recomendation__slide item-two" data-name="recomendation_one"></div>
                 <div class="recomendation__slide item-three" data-name="recomendation_one"></div>
                 <div class="recomendation__slide item-four" data-name="recomendation_one"></div>
                 <div class="recomendation__slide item-five" data-name="recomendation_one"></div>
-                <div class="recomendation__slide item-six" data-name="recomendation_one"></div>
+                
            </div>
         
             <div class="recomendation_slider-absolute">
                 <div class="recomendation__slider recomendation__slider_two">
+                    <div class="recomendation__slide item-six recomendation-active" data-name="recomendation_two"></div>
                     <div class="recomendation__slide item-seven" data-name="recomendation_two"></div>
                     <div class="recomendation__slide item-eight" data-name="recomendation_two"></div>
                     <div class="recomendation__slide item-nine" data-name="recomendation_two"></div>
@@ -106,12 +108,13 @@
                </div>
             </div>
         </div>
+
         <div class="recomendation__box">
             <div class="box__container">
                 <h2>
                     Рекомендуемые<br>курорты
                 </h2>
-                <div class="box__galary">
+                <div class="box__gallery">
                     <h4>Галерея</h4>
                     <p>Посмотреть больше<br>Вы можете пройдя по ссылке снизу</p>
                     <a href="gallery.html">
@@ -129,7 +132,10 @@
     <div class="container">
         <div class="awards__cartbox">
             <div class="awards_cart">
-                <img src="images/award-1.png" alt="award">
+                <div class="awards__img_wrap">
+                    <img src="images/award-1.png" alt="award">
+                </div>
+                
                 <h3>Гостеприимство</h3>
                 <ul>
                     <li><h4>Караджаев Аташ</h4></li>
@@ -140,7 +146,9 @@
         </div>
         <div class="awards__cartbox">
             <div class="awards_cart">
-                <img src="images/award-2.png" alt="award">
+                <div class="awards__img_wrap">
+                    <img src="images/award-2.png" alt="award">
+                </div>
                 <h3>Отели</h3>
                 <ul>
                     <li><h4>Кононенко Владислав</h4></li>
@@ -151,7 +159,9 @@
         </div>
         <div class="awards__cartbox">
             <div class="awards_cart">
-                <img src="images/award-3.png" alt="award">
+                <div class="awards__img_wrap">
+                    <img src="images/award-3.png" alt="award">
+                </div>
                 <h3>Курорты</h3>
                 <ul>
                     <li><h4>Айрапетян Размик</h4></li>
@@ -190,7 +200,10 @@
         </div>
         <div class="service__box">
             <div class="service__box_cart">
-                <img src="images/service-icon-1.png" alt="Отель">
+                <div class="service__img_wrap">
+                    <img src="images/service-icon-1.png" alt="Отель">
+                </div>
+                
                 <h3>Отели</h3>
                 <p>
                     Гостиница состоит из шести корпусов <br>
@@ -200,7 +213,10 @@
                 </p>
             </div>
             <div class="service__box_cart">
-                <img src="images/service-icon-2.png" alt="Отдых">
+                <div class="service__img_wrap">
+                    <img src="images/service-icon-2.png" alt="Отдых">
+                </div>
+                
                 <h3>Отдых</h3>
                 <p>
                     На территории есть собственная<br>
@@ -211,7 +227,10 @@
                 </p>
             </div>
             <div class="service__box_cart">
-                <img src="images/service-icon-3.png" alt="Комфорт">
+                <div class="service__img_wrap">
+                    <img src="images/service-icon-3.png" alt="Комфорт">
+                </div>
+                
                 <h3>Комфорт</h3>
                 <p>
                     По выбору гостей можно заказать<br>
@@ -236,7 +255,7 @@
                     </ul>
                     <nav>
                         <ul>
-                            <li><a href="about.html">О Нас</a></li>
+                            <li><a href="aboutus.html">О Нас</a></li>
                             <li><a href="restoraunt.html">Рестораны</a></li>
                             <li><a href="gallery.html">Галерея</a></li>
                             <li><a href="contact.html">Контакты</a></li>
@@ -269,12 +288,12 @@
         </div>
         <nav class="footer__social">
             <ul>
-                <li><a href="#" class="facebook"></a></li>
-                <li><a href="#" class="twitter"></a></li>
-                <li><a href="#" class="googleplus"></a></li>
-                <li><a href="#" class="instagram"></a></li>
-                <li><a href="#" class="youtube"></a></li>
-                <li><a href="#" class="music"></a></li>
+                <li><a href="https://ru-ru.facebook.com/" class="facebook"></a></li>
+                <li><a href="https://twitter.com/" class="twitter"></a></li>
+                <li><a href="https://google.com" class="googleplus"></a></li>
+                <li><a href="https://intagram.com" class="instagram"></a></li>
+                <li><a href="https://youtube.com" class="youtube"></a></li>
+                <li><a href="https://music.yandex.ru/home" class="music"></a></li>
             </ul>
         </nav>
         
@@ -283,5 +302,6 @@
     <img src="./images/top.png" alt="вверх">
 </div>    </div>
 <script src="js/index.js"></script>
+<script src="js/btnScroll.js"></script>
 </body>
 </html>
