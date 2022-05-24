@@ -283,6 +283,10 @@ h2 {
 .menu__btn_wrap .btn-more {
   margin-right: 15px;
 }
+.menu__btn_wrap .btn-less {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
 
 .footer {
   background-image: url(./../images/footer.jpg);
@@ -340,6 +344,7 @@ h2 {
   font-weight: 600;
 }
 .footer__subscribe p {
+  color: #FFF;
   font-size: 14px;
   margin: 15px 0;
 }

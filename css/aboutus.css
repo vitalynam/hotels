@@ -436,6 +436,7 @@ h2 {
   font-weight: 600;
 }
 .footer__subscribe p {
+  color: #FFF;
   font-size: 14px;
   margin: 15px 0;
 }
@@ -679,7 +680,6 @@ h2 {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 136px;
   font-size: 20px;
   text-align: center;
   color: #1dc8d9;
@@ -691,4 +691,7 @@ h2 {
 .recomendation__box .box__gallery a:hover {
   background-color: #1dc8d9;
   color: white;
+}
+.recomendation__box .box__gallery a span {
+  padding-right: 2px;
 }
