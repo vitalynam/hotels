@@ -1,0 +1,24 @@
+.where{
+    // padding-top: 1px;
+}
+
+.where__box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    h2{
+        margin-top: 0;
+        text-align: left;
+    }
+    p{
+        line-height: 30px;
+    }
+
+    .where__img_wrap{
+        width: 570px;
+        height: 290px;
+        padding: 0 15px;
+    }
+}

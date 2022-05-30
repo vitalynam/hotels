@@ -1,0 +1,113 @@
+<section class="booking">
+    <div class="container">
+        <h2>Book Your Resort!</h2>
+        <form action="" class="form">
+
+            <!-- Выбрать Место -->
+            <div class="form__place">
+                <span>Выберите место</span>
+                <select name="place" id="place">
+                    <option value="0"></option>
+                    <option value="1">Атлантика</option>
+                    <option value="2">Багамские острова</option>
+                    <option value="3">Канны</option>
+                    <option value="4">Гоа</option>
+                    <option value="5">Гавайи</option>
+                    <option value="6">Ибица</option>
+                    <option value="7">Маями</option>
+					<option value="8">Мальдивы</option>
+                </select>
+            </div>
+
+            <!-- Колличество взрослых -->
+            <div class="form__adults">
+                <span>Количество взрослых</span>
+                <select name="adults" id="adults">
+                    <option value="0"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">Больше...</option>
+                </select>
+            </div>
+
+            <!-- Колличество Детей -->
+            <div class="form__childrens">
+                <span>Количество детей</span>
+                <select name="childrens" id="childrens">
+                    <option value="zero"></option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">Больше...</option>
+                </select>
+            </div>
+
+            <!-- Выберите Дом -->
+            <div class="form__home">
+                <span>Выберите Дом</span>
+                <select name="home" id="home">
+                    <option value="0"></option>
+                    <option value="1">Одноместный номер</option>
+                    <option value="2">Одноместный номер люкс</option>
+                    <option value="3">Двух конатный</option>
+                    <option value="4">Двух комнатный люкс</option>
+                    <option value="5">Суперлюкс</option>
+                    <option value="6">Представительский класс</option>
+                    <option value="7">Люкс с видом на океан</option>
+                    <option value="8">Президентский люкс</option>
+                    <option value="9">Пентхаус</option>
+                </select>
+            </div>
+
+            <!-- Выбрать дату -->
+            <div class="form-date">
+                <span>Выберите дату</span>
+                <div class="form-box">
+                    <!-- Дата заезда -->
+                    <div class="form__date_in">
+                        <label for="date-in">Дата заезда</label>
+                        <input type="date" id="date-in">
+                    </div>
+
+                    <!-- Дата выезда -->
+                    <div class="form__date_out">
+                        <label for="date-in">Дата выезда</label>
+                        <input type="date" id="date-out">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Выбрать кухню -->
+            <div class="form-cuisine">
+                <span>Выберите кухню</span>
+                <div class="cuisine__box">
+                    <div class="asian">
+                        <label for="asian">Азиатская</label>
+                        <input type="radio" id="asian" name="cuisine">
+                    </div>
+                    <div class="european">
+                        <label for="european">Европейская</label>
+                        <input type="radio" id="european" name="cuisine">
+                    </div>
+                    <div class="eastern">
+                        <label for="eastern">Восточная</label>
+                        <input type="radio" id="eastern" name="cuisine">
+                    </div>
+                    <div class="mixed">
+                        <label for="mixed">Смешанная</label>
+                        <input type="radio" id="mixed" name="cuisine">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Кнопка "Забронировать" -->
+            <input class="form-btn" type="submit" value="Забронировать">
+        </form>
+    </div>
+</section>

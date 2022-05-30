@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование</title>
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+    <div class="page">
+        <header class="header" id="header">
+<nav class="header__nav">
+    <div class="container">
+        <div class="header__logo">
+            <a href="index.html" class="header__logo_link">Лучшие гостиницы</a>
+        </div>
+        <ul class="nav__items">
+            <li><a href="index.html" class="nav__link ">Домой</a></li>
+            <li><a href="aboutus.html" class="nav__link ">О Нас</a></li>
+            <li><a href="restoraunt.html" class="nav__link ">Ресторан</a></li>
+            <li><a href="gallery.html" class="nav__link ">Галерея</a></li>
+            <li><a href="booking.html" class="nav__link link-active">Бронирование</a></li>
+        </ul>
+        
+    </div>
+</nav><div class="header__title">
+    <h1>Бронирование</h1>
+</div>        </header>
+        <main>
+<section class="where">
+    <div class="container">
+        <div class="where__box">
+            <div class="where__info">
+                <h2>Где мы находимся</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim<br>
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br>
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate<br>
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat<br>
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est<br>
+                    laborum.
+                </p>
+            </div>
+            <div class="where__img_wrap">
+                <img src="images/location.jpg" alt="Карта">
+            </div>
+        </div>
+    </div>
+</section><section class="booking">
+    <div class="container">
+        <h2>Book Your Resort!</h2>
+        <form action="" class="form">
+
+            <!-- Выбрать Место -->
+            <div class="form__place">
+                <span>Выберите место</span>
+                <select name="place" id="place">
+                    <option value="0"></option>
+                    <option value="1">Атлантика</option>
+                    <option value="2">Багамские острова</option>
+                    <option value="3">Канны</option>
+                    <option value="4">Гоа</option>
+                    <option value="5">Гавайи</option>
+                    <option value="6">Ибица</option>
+                    <option value="7">Маями</option>
+					<option value="8">Мальдивы</option>
+                </select>
+            </div>
+
+            <!-- Колличество взрослых -->
+            <div class="form__adults">
+                <span>Количество взрослых</span>
+                <select name="adults" id="adults">
+                    <option value="0"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">Больше...</option>
+                </select>
+            </div>
+
+            <!-- Колличество Детей -->
+            <div class="form__childrens">
+                <span>Количество детей</span>
+                <select name="childrens" id="childrens">
+                    <option value="zero"></option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">Больше...</option>
+                </select>
+            </div>
+
+            <!-- Выберите Дом -->
+            <div class="form__home">
+                <span>Выберите Дом</span>
+                <select name="home" id="home">
+                    <option value="0"></option>
+                    <option value="1">Одноместный номер</option>
+                    <option value="2">Одноместный номер люкс</option>
+                    <option value="3">Двух конатный</option>
+                    <option value="4">Двух комнатный люкс</option>
+                    <option value="5">Суперлюкс</option>
+                    <option value="6">Представительский класс</option>
+                    <option value="7">Люкс с видом на океан</option>
+                    <option value="8">Президентский люкс</option>
+                    <option value="9">Пентхаус</option>
+                </select>
+            </div>
+
+            <!-- Выбрать дату -->
+            <div class="form-date">
+                <span>Выберите дату</span>
+                <div class="form-box">
+                    <!-- Дата заезда -->
+                    <div class="form__date_in">
+                        <label for="date-in">Дата заезда</label>
+                        <input type="date" id="date-in">
+                    </div>
+
+                    <!-- Дата выезда -->
+                    <div class="form__date_out">
+                        <label for="date-in">Дата выезда</label>
+                        <input type="date" id="date-out">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Выбрать кухню -->
+            <div class="form-cuisine">
+                <span>Выберите кухню</span>
+                <div class="cuisine__box">
+                    <div class="asian">
+                        <label for="asian">Азиатская</label>
+                        <input type="radio" id="asian" name="cuisine">
+                    </div>
+                    <div class="european">
+                        <label for="european">Европейская</label>
+                        <input type="radio" id="european" name="cuisine">
+                    </div>
+                    <div class="eastern">
+                        <label for="eastern">Восточная</label>
+                        <input type="radio" id="eastern" name="cuisine">
+                    </div>
+                    <div class="mixed">
+                        <label for="mixed">Смешанная</label>
+                        <input type="radio" id="mixed" name="cuisine">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Кнопка "Забронировать" -->
+            <input class="form-btn" type="submit" value="Забронировать">
+        </form>
+    </div>
+</section><section class="address">
+    <div class="container">
+        <h2>Оставайтесь с нами на связи</h2>
+        <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore quis nostrud exercitation ullamco<br>
+            laboris nisi ut aliquip ex ea commodo consequateu fugiat nulla pariatur.
+        </p>
+        <div class="address__box">
+            <div class="address__info">
+                <div class="address__item">
+                    <h3>Адрес</h3>
+                    <ul>
+                        <li>Краснодар</li>
+                        <li>Москва</li>
+                        <li>Санкт-Петербург</li>
+                        <li>Владивосток</li>
+                    </ul>
+                </div>
+                <div class="phone__item">
+                    <h3>Телефон</h3>
+                    <ul>
+                        <li><a href="tel:+1234567890">+1 (234) 567-89-00</a></li>
+                        <li><a href="tel:+1234567890">+1 (234) 567-89-00</a></li>
+                    </ul>
+                </div>
+                <div class="email__item">
+                    <h3>Эл.почта</h3>
+                    <ul>
+                        <li>
+                            <a href="mailto:example@mai.ru">example@mail.ru</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="address__form">
+                <form action="">
+                    <input class="address__form_inp" type="text" placeholder="Имя">
+                    <input class="address__form_inp" type="email" placeholder="Эл.почта">
+                    <textarea name="message" id="message"  placeholder="Сообщение"></textarea>
+                    <input type="submit" value="Отправить" class="address__form_btn">
+                </form>
+            </div>
+        </div>
+    </div>
+</section><section class="map">
+   
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A55e4d73645385d5a965a04ce00116478f59521a1ed9df36532248c411eacf2fe&amp;source=constructor" width="100%" height="465" frameborder="0"></iframe>
+
+</section>        </main>
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="footer__section">
+            <div class="footer__box">
+                <div class="footer__nav">
+                    <ul>
+                        <li>5 Звезд</li>
+                        <li>Пляжные курорты</li>
+                        <li>Дом на берегу</li>
+                        <li>Дом на воде</li>
+                    </ul>
+                    <nav>
+                        <ul>
+                            <li><a href="aboutus.html">О Нас</a></li>
+                            <li><a href="restoraunt.html">Ресторан</a></li>
+                            <li><a href="gallery.html">Галерея</a></li>
+                            <li><a href="contact.html">Бронирование</a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Bahamas</a></li>
+                            <li><a href="#">Hawaii</a></li>
+                            <li><a href="#">Miami</a></li>
+                            <li><a href="#">Ibiza</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+           
+            <div class="footer__box footer__subscribe">
+                <h4>Оставайтесь на связи</h4>
+                <p>
+                    Подписывайтесь и узнавайте наши новости первым!
+                </p>
+                <form action="" method="get">
+                    <input type="Email" placeholder="Email"> <br>
+                    <button>Подписаться</button>
+                </form>
+                <p>
+                    © All Rights Reserved | Design by W3layouts
+                </p>
+            </div>
+        </div>
+        <nav class="footer__social">
+            <ul>
+                <li><a href="https://ru-ru.facebook.com/" class="facebook"></a></li>
+                <li><a href="https://twitter.com/" class="twitter"></a></li>
+                <li><a href="https://google.com" class="googleplus"></a></li>
+                <li><a href="https://intagram.com" class="instagram"></a></li>
+                <li><a href="https://youtube.com" class="youtube"></a></li>
+                <li><a href="https://music.yandex.ru/home" class="music"></a></li>
+            </ul>
+        </nav>
+        
+    </div>
+</footer><div class="btn__up">
+    <img src="./images/top.png" alt="вверх">
+</div>    </div>
+    
+    <script src="js/btnScroll.js"></script>
+</body>
+</html>

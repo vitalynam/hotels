@@ -1,0 +1,10 @@
+@import "module/reset"; //--------- Срос стилей ----------
+@import "module/header-menu"; //------------- Навигация ---------------
+@import "module/header-title";        //------------- Заголовок h1 ---------------
+
+@import "module/gallery/hospitality";        //------------- SECTION HOSPITALITY ---------------
+@import "module/gallery/gallery";        //------------- SECTION GALLERY ---------------
+
+@import "module/footer"; //---------------- Футер --------------
+
+@import "module/btnup"; //---------------- Фиксированная кнопка "Вверх" внизу сраницы --------------

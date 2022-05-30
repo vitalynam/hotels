@@ -1,0 +1,35 @@
+.gallery{
+    margin-bottom: 100px;
+}
+.gallery__box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    .gallery__img{               //ul
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+        
+        li{
+            position: relative;
+
+            .gallery__img_bg{
+               cursor: pointer;
+               width: 100%;
+               height: 100%;
+               background-color: #000;
+               opacity: 0.1;
+               transition: all ease-in 0.3s;
+               position: absolute;
+               top: 0;
+               left: 0;
+               z-index: 5;
+               &:hover{
+                   opacity: 0.4;
+               }
+            }
+        } 
+    }
+}
