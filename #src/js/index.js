@@ -71,10 +71,8 @@ const nextSlide = (items) => {  // создаем функцию для слай
             slide.classList.remove('recomendation-active'); // циклом проходим по всем элементам и удаляем класс ACTIVE
         }
         items[counter].classList.add('recomendation-active');   // Добавляем класс ACTIVE нужному элементу
-
-    }
+    }        
 }
-
 const slides = document.querySelectorAll('[data-name = "recomendation_one"]' ); // Получаем все слайды из первого слайда
 const slidesTwo = document.querySelectorAll('[data-name = "recomendation_two"]' ); // Получаем все слайды из второго слайда
 

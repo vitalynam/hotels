@@ -16,6 +16,9 @@ body{
     height: 100%;
     
 }
+body._lock{
+    overflow: hidden;
+}
 main{
     flex: 1 1 auto;
 }

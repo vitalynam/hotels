@@ -33,23 +33,32 @@
         font-size: 55px;
         line-height: 70px;
         font-weight: bold;
-        width: 50%;
+        text-align: left;
+        width: 45%;
         position: absolute;
         margin-top: 0;
-        top: 35%;
+        top: 250px;
         left: 15%;
         z-index: 3;
         span{
             color: #1dc8d9 ;
         }
     }
+    // h1{
+        
+    // }
+    // h2{
+    //     font-size: 50px;
+    //     line-height: 70px;
+    //     font-weight: bold;
+    // }
 }
 
 // БУЛЛЕТЫ
 .header-pagination{
     position: absolute;
     right: 10%;
-    top: 40%;
+    top: 275px;
     z-index: 4;
     width: 20px;
     height: 150px;
@@ -92,4 +101,17 @@
 // Активный слайд
 .slide-active{
     opacity: 1;
+}
+
+
+// ------------- Медиа запросы -------------------
+@media (max-width: 1000px){
+   .header-slide{
+    h1,h2{
+        
+        font-size: 40px;
+        line-height: 50px;
+        font-weight: bold;
+    }
+   }
 }
