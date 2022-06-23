@@ -1,9 +1,11 @@
 .header__nav{
-         width: 100%;
+        width: 100%;
         background-color: rgba(255, 255, 255, 0.88);
         position: absolute;
         left: 0;
         top: 0;
+        transform: translateY(-50%);
+        opacity: 0;
         z-index: 1000;
     .container{
         display: flex;
@@ -33,6 +35,10 @@
             }
         }
     }
+}
+.header__nav._active{
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .nav__link{

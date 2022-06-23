@@ -33,7 +33,16 @@
     }
 }
 
+.footer__box{
+    transform: translateX(-70%);
+    transition: transform 0.5s ease-in-out;
+}
+.footer__box._active{
+    transform: translateY(0);
+}
 .footer__subscribe{
+    transform: translateX(70%);
+    transition: transform 1s ease-in-out;
     h4{
         font-size: 35px;
         font-weight: 600;
@@ -73,11 +82,15 @@
         }
     }
 }
-
+.footer__subscribe._active{
+    transform: translateY(0);
+}
 .footer__social{
     position: absolute;
     bottom: 65px;
     left: 47px;
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(100%);
     ul{
         display: flex;
         li{
@@ -90,6 +103,9 @@
             }
         }
     }
+}
+.footer__social._active{
+    transform: translateY(0);
 }
 
 .facebook{

@@ -68,3 +68,9 @@
         }
     }
 }
+.booking__animate{
+    transform: translateX(-70%);
+}
+.booking__animate._active{
+    transform: translateX(0);
+}

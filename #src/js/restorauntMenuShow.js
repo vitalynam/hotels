@@ -1,6 +1,7 @@
 const btnMore = document.querySelector('.btn-more');            // Получаем кнопку "Показать меню"
 const btnLess = document.querySelector('.btn-less');            // Получаем кнопку "Скрыть меню"
 const menuItems = document.querySelectorAll('.show-items');
+const eat = document.querySelectorAll('._animate-items');
 
 let menuCounter = 0;    // Создаем счетчик
 

@@ -10,6 +10,10 @@
 .success__box{
     display: flex;
     justify-content: space-around;
+    transform: translateY(70%);
+}
+.success__box._active{
+    transform: translateY(0);
 }
 
 .success__item{
@@ -17,7 +21,7 @@
     height: 245px;
     position: relative;
     background: #3085a3;
-
+    cursor: pointer;
     img{
         opacity: 0.8;
     }

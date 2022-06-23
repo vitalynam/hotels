@@ -9,9 +9,13 @@
     .awards__title{
         padding-top: 35px;
         margin-bottom: 50px;
+        transform: translateY(80%);
         h2{
             text-align: center;
         }
+    }
+    .awards__title._active{
+        transform: translateY(0);
     }
     
     .container{
@@ -58,4 +62,11 @@
             }
         }
     }
+}
+.awards__cartbox{
+    opacity: 0;
+    transition: opacity 3s ease;
+}
+.awards__cartbox._active{
+    opacity: 1;
 }

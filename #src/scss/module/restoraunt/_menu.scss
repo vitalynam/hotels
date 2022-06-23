@@ -10,7 +10,6 @@
         li{
             width: 45%;
             margin-bottom: 50px;
-    
             .menu__name{
                 display: flex;
                 align-items: center;
@@ -41,6 +40,17 @@
                 }
             }
         }
+        .menu__primary{
+            &:nth-child(1n){
+                transform: translateX(-70%);
+            }
+            &:nth-child(2n){
+                transform: translateX(70%);
+            }
+        }
+        .menu__primary._active{
+            transform: translateX(0);
+        }
     }
     .hidden{
         display: none;
@@ -56,6 +66,7 @@
         width: 14%;
         border: 1px solid #1dc8d9;
         background-color: #fff;
+        outline: none;
         &:hover{
             background-color:#1dc8d9;
             color: #fff;

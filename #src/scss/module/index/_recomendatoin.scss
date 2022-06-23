@@ -7,7 +7,18 @@
 .recomendation__box{
     margin-top: 40px;
     position: relative;
+    transform: translateX(-100%);
 }
+.recomendation__box._active{
+    transform: translateX(0);
+}
+.box__two{
+    transform: translateX(100%);
+}
+.box__two._active{
+    transform: translateX(0);
+}
+
 .recomendation__slider{
     position: relative;
     width: 550px;

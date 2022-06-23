@@ -1,6 +1,9 @@
 .header__nav{
     width: 100%;
     background-color: white;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all ease-in-out 1s;
     
     .container{
         display: flex;
@@ -31,6 +34,10 @@
             }
         }
     }
+}
+.header__nav._active{
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .nav__link{

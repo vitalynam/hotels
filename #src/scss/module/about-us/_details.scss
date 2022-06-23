@@ -7,6 +7,7 @@
 .details__box{
     display: flex;
     justify-content: space-around;
+    transform: translateY(50%);
 
     .details__item{
         width: 330px;
@@ -37,4 +38,7 @@
     }
     
 
+}
+.details__box._active{
+    transform: translateY(0);
 }

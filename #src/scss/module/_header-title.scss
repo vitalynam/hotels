@@ -3,6 +3,7 @@
     height: 400px;
     background-image: url(./../images/banner.jpg);
     background-repeat: no-repeat;
+    transform: translateY(80%);
     h1{
         font-size: 50px;
         font-weight: 700;
@@ -12,4 +13,7 @@
         text-transform: uppercase;
 
     }
+}
+.header__title._active{
+    transform: translateY(0);
 }

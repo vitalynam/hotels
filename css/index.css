@@ -40,6 +40,7 @@ main {
           flex-direction: column;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
 }
 
 .container {
@@ -85,12 +86,20 @@ h2 {
   margin-bottom: 50px;
 }
 
+._animate-items {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
 .header__nav {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.88);
   position: absolute;
   left: 0;
   top: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 0;
   z-index: 1000;
 }
 .header__nav .container {
@@ -127,6 +136,12 @@ h2 {
 }
 .header__nav .container .nav__items li {
   margin-left: 35px;
+}
+
+.header__nav._active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 .nav__link {
@@ -409,6 +424,23 @@ h2 {
 .recomendation__box {
   margin-top: 40px;
   position: relative;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.recomendation__box._active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.box__two {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.box__two._active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .recomendation__slider {
@@ -580,9 +612,15 @@ h2 {
 #awards .awards__title {
   padding-top: 35px;
   margin-bottom: 50px;
+  -webkit-transform: translateY(80%);
+          transform: translateY(80%);
 }
 #awards .awards__title h2 {
   text-align: center;
+}
+#awards .awards__title._active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 #awards .container {
   display: -webkit-box;
@@ -642,6 +680,16 @@ h2 {
   font-weight: bold;
 }
 
+.awards__cartbox {
+  opacity: 0;
+  -webkit-transition: opacity 3s ease;
+  transition: opacity 3s ease;
+}
+
+.awards__cartbox._active {
+  opacity: 1;
+}
+
 .service__section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -652,14 +700,26 @@ h2 {
 }
 .service__section .service__text {
   padding-top: 25px;
+  opacity: 0;
+  -webkit-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
 }
 .service__section .service__text p {
   text-align: center;
+}
+.service__section .service__text._active {
+  opacity: 1;
 }
 .service__section .service__img {
   width: 450px;
   height: 450px;
   margin-top: -55px;
+  -webkit-transform: translateY(35%);
+          transform: translateY(35%);
+}
+.service__section .service__img._active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .service__box {
@@ -670,6 +730,8 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 80px 0;
+  -webkit-transform: translateY(40%);
+          transform: translateY(40%);
 }
 .service__box_cart {
   text-align: center;
@@ -692,6 +754,11 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   border-bottom: 4px solid #1dc8d9;
+}
+
+.service__box._active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .footer {
@@ -745,6 +812,28 @@ h2 {
   color: white;
 }
 
+.footer__box {
+  -webkit-transform: translateX(-70%);
+          transform: translateX(-70%);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.footer__box._active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.footer__subscribe {
+  -webkit-transform: translateX(70%);
+          transform: translateX(70%);
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
 .footer__subscribe h4 {
   font-size: 35px;
   font-weight: 600;
@@ -785,10 +874,21 @@ h2 {
   background-color: #0a9683;
 }
 
+.footer__subscribe._active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .footer__social {
   position: absolute;
   bottom: 65px;
   left: 47px;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
 }
 .footer__social ul {
   display: -webkit-box;
@@ -801,6 +901,11 @@ h2 {
   display: block;
   width: 50px;
   height: 50px;
+}
+
+.footer__social._active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .facebook {

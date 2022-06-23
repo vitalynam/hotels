@@ -17,17 +17,37 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        transition: transform ease-in-out 1.5s;
         &:nth-child(1){
             background-image: url(./../images/room-1.jpg);
+            transform: translateX(-100%);
         }
+        &:nth-child(1)._active{
+            transform: translateX(0);
+        }
+
         &:nth-child(2){
             background-image: url(./../images/room-2.jpg);
+            transform: translateX(100%);
         }
+        &:nth-child(2)._active{
+            transform: translateX(0);
+        }
+
         &:nth-child(3){
             background-image: url(./../images/room-3.jpg);
+            transform: translateX(-100%);
         }
+        &:nth-child(3)._active{
+            transform: translateX(0);
+        }
+
         &:nth-child(4){
             background-image: url(./../images/room-4.jpg);
+            transform: translateX(100%);
+        }
+        &:nth-child(4)._active{
+            transform: translateX(0);
         }
         
         h4{

@@ -10,7 +10,7 @@
 <body>
     <div class="page">
         <header class="header" id="header">
-<nav class="header__nav">
+<nav class="header__nav _animate-items">
     <div class="container">
         <div class="header__logo">
             <a href="index.html" class="header__logo_link">Лучшие гостиницы</a>
@@ -28,13 +28,13 @@
             <span></span>
         </div>
     </div>
-</nav><div class="header__title">
+</nav><div class="header__title _animate-items">
     <h1>Бронирование</h1>
 </div>        </header>
         <main>
 <section class="where">
     <div class="container">
-        <div class="where__box">
+        <div class="where__box"> 
             <div class="where__info">
                 <h2>Где мы находимся</h2>
                 <p>
@@ -58,7 +58,7 @@
         <form action="" class="form">
 
             <!-- Выбрать Место -->
-            <div class="form__place">
+            <div class="form__place booking__animate _animate-items">
                 <span>Выберите место</span>
                 <select name="place" id="place">
                     <option value="0"></option>
@@ -74,7 +74,7 @@
             </div>
 
             <!-- Колличество взрослых -->
-            <div class="form__adults">
+            <div class="form__adults booking__animate _animate-items">
                 <span>Количество взрослых</span>
                 <select name="adults" id="adults">
                     <option value="0"></option>
@@ -88,7 +88,7 @@
             </div>
 
             <!-- Колличество Детей -->
-            <div class="form__childrens">
+            <div class="form__childrens booking__animate _animate-items">
                 <span>Количество детей</span>
                 <select name="childrens" id="childrens">
                     <option value="zero"></option>
@@ -103,7 +103,7 @@
             </div>
 
             <!-- Выберите Дом -->
-            <div class="form__home">
+            <div class="form__home booking__animate _animate-items">
                 <span>Выберите Дом</span>
                 <select name="home" id="home">
                     <option value="0"></option>
@@ -120,7 +120,7 @@
             </div>
 
             <!-- Выбрать дату -->
-            <div class="form-date">
+            <div class="form-date booking__animate _animate-items">
                 <span>Выберите дату</span>
                 <div class="form-box">
                     <!-- Дата заезда -->
@@ -138,7 +138,7 @@
             </div>
 
             <!-- Выбрать кухню -->
-            <div class="form-cuisine">
+            <div class="form-cuisine booking__animate _animate-items">
                 <span>Выберите кухню</span>
                 <div class="cuisine__box">
                     <div class="asian">
@@ -161,7 +161,7 @@
             </div>
             
             <!-- Кнопка "Забронировать" -->
-            <input class="form-btn" type="submit" value="Забронировать">
+            <input class="form-btn _animate-items booking__animate" type="submit" value="Забронировать">
         </form>
     </div>
 </section><section class="address">
@@ -172,7 +172,7 @@
             laboris nisi ut aliquip ex ea commodo consequateu fugiat nulla pariatur.
         </p>
         <div class="address__box">
-            <div class="address__info">
+            <div class="address__info _animate-items">
                 <div class="address__item">
                     <h3>Адрес</h3>
                     <ul>
@@ -199,7 +199,7 @@
                 </div>
             </div>
 
-            <div class="address__form">
+            <div class="address__form _animate-items">
                 <form action="">
                     <input class="address__form_inp" type="text" placeholder="Имя">
                     <input class="address__form_inp" type="email" placeholder="Эл.почта">
@@ -217,7 +217,7 @@
 <footer class="footer" id="footer">
     <div class="container">
         <div class="footer__section">
-            <div class="footer__box">
+            <div class="footer__box _animate-items">
                 <div class="footer__nav">
                     <ul>
                         <li>5 Звезд</li>
@@ -244,7 +244,7 @@
                 </div>
             </div>
            
-            <div class="footer__box footer__subscribe">
+            <div class="footer__box footer__subscribe _animate-items">
                 <h4>Оставайтесь на связи</h4>
                 <p>
                     Подписывайтесь и узнавайте наши новости первым!
@@ -258,7 +258,7 @@
                 </p>
             </div>
         </div>
-        <nav class="footer__social">
+        <nav class="footer__social _animate-items">
             <ul>
                 <li><a href="https://ru-ru.facebook.com/" class="facebook"></a></li>
                 <li><a href="https://twitter.com/" class="twitter"></a></li>
@@ -274,6 +274,7 @@
     <img src="./images/top.png" alt="вверх">
 </div>    </div>
     
+    <script src="js/animation.js"></script>
     <script src="js/btnScroll.js"></script>
     <script src="js/burger.js"></script>
 </body>

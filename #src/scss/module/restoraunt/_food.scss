@@ -9,7 +9,7 @@
 }
 
 .food__info{
-
+    transform: translateX(-70%);
     h2{
         margin-top: 0;
         text-align: left;
@@ -20,12 +20,19 @@
         line-height: 35px;
     }
 }
+.food__info._active{
+    transform: translateX(0);
+}
 
 .food__img{
     width: 540px;
     height: 360px;
+    transform: translateX(70%);
     img{
         width: 100%;
         height: 100%;
     }
+}
+.food__img._active{
+    transform: translateX(0);
 }
