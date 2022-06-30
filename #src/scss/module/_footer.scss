@@ -175,3 +175,30 @@
     }
    
 }
+@media (max-width: 680px){
+    .footer__section{
+        .hidden{
+            display: none;
+        }
+    }
+    .footer__social{
+        display: none;
+    }
+    .footer__box{
+        width: 100%;
+        text-align: center;
+        p{
+            font-size: 14px;
+        }
+        form{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 25px;
+            input{
+                margin-bottom: 10px;
+            }
+        }
+        
+    }
+}

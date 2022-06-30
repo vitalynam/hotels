@@ -1,6 +1,7 @@
 .header__nav{
         width: 100%;
-        background-color: rgba(255, 255, 255, 0.88);
+        // background-color: rgba(255, 255, 255, 0.88);
+        background-color: rgb(95, 7, 7);
         position: absolute;
         left: 0;
         top: 0;
@@ -186,6 +187,17 @@
             .burger._active::after{
                 top: 50%;
                 transform: rotate(45deg) translate(0px, 50%);
+            }
+        }
+    }
+}
+@media (max-width: 510px){
+    .header__nav{
+        .container{
+            .header__logo{
+                .header__logo_link{
+                    font-size: 25px;
+                }
             }
         }
     }

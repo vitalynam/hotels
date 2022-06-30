@@ -55,3 +55,33 @@
 .service__box._active{
     transform: translateY(0);
 }
+
+
+@media (max-width: 800px){
+
+    .service__section{
+        .service__img{
+            width: 300px;
+            height: 300px;
+            margin-left: 15px;
+            margin-top: 45px;
+        }
+    }
+}
+@media (max-width: 750px){
+
+    .service__section{
+        flex-direction: column;
+        h2{
+            margin-top: 25px;
+            margin-bottom: 35px;
+        }
+        .service__img{
+           width: 100%;
+           margin-left: 0;
+           img{
+            object-fit: cover;
+           }
+        }
+    }
+}
