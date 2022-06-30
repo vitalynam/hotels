@@ -60,7 +60,7 @@
 }
 
 // ------------- Медиа запросы -------------------
-@media (max-width: 1000px){
+@media (max-width: 1005px){
     .header{
         position: relative;
     }
@@ -98,7 +98,7 @@
                 padding: 15px;
                 background-color: #fff;
                 position: fixed;
-                top: 0;
+                top: 60px;
                 left: -100%;
                 z-index: 100;
                 overflow: auto;

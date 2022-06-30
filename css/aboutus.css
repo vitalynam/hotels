@@ -28,6 +28,10 @@ main {
           flex: 1 1 auto;
 }
 
+main._lock {
+  opacity: 0;
+}
+
 .page {
   max-width: 1400px;
   min-height: 100%;
@@ -40,7 +44,6 @@ main {
           flex-direction: column;
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
 }
 
 .container {
@@ -89,6 +92,11 @@ h2 {
 ._animate-items {
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+  opacity: 0;
+}
+
+._animate-items._active {
+  opacity: 1;
 }
 
 .header__nav {
@@ -163,7 +171,7 @@ h2 {
   color: #1dc8d9;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1005px) {
   .header {
     position: relative;
   }
@@ -200,7 +208,7 @@ h2 {
     padding: 15px;
     background-color: #fff;
     position: fixed;
-    top: 0;
+    top: 60px;
     left: -100%;
     z-index: 100;
     overflow: auto;
@@ -770,6 +778,34 @@ h2 {
   background-position: -250px -50px;
 }
 
+@media (max-width: 850px) {
+  .footer__nav {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 18px;
+  }
+
+  .footer__box {
+    width: 48%;
+  }
+  .footer__box .cities {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .footer__section {
+    padding: 45px 0;
+  }
+
+  .footer__box h4 {
+    font-size: 31px;
+  }
+
+  .footer__social {
+    left: 30px;
+    bottom: 70px;
+  }
+}
 .btn__up {
   cursor: pointer;
   position: fixed;

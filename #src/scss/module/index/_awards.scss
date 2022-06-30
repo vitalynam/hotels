@@ -70,3 +70,22 @@
 .awards__cartbox._active{
     opacity: 1;
 }
+
+
+
+@media (max-width: 1000px){
+    #awards{
+        
+        .awards__title{
+
+            h2{
+                
+            }
+        }
+        
+        .container{
+            flex-wrap: wrap;
+        }
+    }
+    
+}

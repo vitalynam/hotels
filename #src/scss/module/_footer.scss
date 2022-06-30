@@ -144,3 +144,34 @@
         background-position: -250px -50px;
     }
 }
+
+
+@media (max-width: 850px){
+    .footer__nav{
+        justify-content: space-around;
+        font-size: 18px;
+    }
+    .footer__box{
+        width: 48%;
+        .cities{
+            display: none;
+        }
+    }
+   
+}
+@media (max-width: 800px){
+    .footer__section{
+        padding: 45px 0;
+    }
+    .footer__box{
+        h4{
+            font-size: 31px;
+        }
+        
+    }
+    .footer__social{
+        left: 30px;
+        bottom: 70px;
+    }
+   
+}

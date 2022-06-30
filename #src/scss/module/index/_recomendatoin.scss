@@ -21,7 +21,7 @@
 
 .recomendation__slider{
     position: relative;
-    width: 550px;
+    width: 500px;
     height: 350px;
     overflow: hidden;
     .item-zero{
@@ -49,8 +49,8 @@
     top: 50%;
     left: 60%;
     .recomendation__slider_two{
-        width: 500px;
-        height: 350px;
+        width: 400px;
+        height: 300px;
     }
     .item-six{
         background-image: url(./../images/gallery-6.jpg);
@@ -146,27 +146,63 @@
 
 
 // ------------- Медиа запросы -------------------
-@media (max-width: 1000px){
+@media (max-width: 1005px){
+    .recomendation{
+        margin-bottom: 130px;
+    }
     .recomendation__slider{
         width: 430px;
         height: 300px;
     }
     .recomendation_slider-absolute{
-        top: 48%;
+        top: 55%;
+        left: 55%;
         .recomendation__slider{
-            width: 430px;
-            height: 300px;
+            width: 350px;
+            height: 250px;
         }
     }
+
    .recomendation__box{
-       .box__container{
-           margin-top: 85px;
-           margin-left: 85px;
-       }
-       .box__gallery{
-           p{
-               margin-bottom: 20px;
-           }
-       }
-   }
- }
+        margin-top: 60px;
+        width: 45%;
+        .box__container{
+            margin-top: 0;
+            margin-left: 116px;
+            h2{
+                margin-top: 50px;
+                text-align: left;
+            }
+            .box__gallery{
+                margin-top: 50px;
+                margin-left: 181px;
+                p{
+                    width: 200px;
+                }
+                a{
+                    width: 120px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 850px){
+
+   .recomendation__box{
+        
+        .box__container{
+            h2{
+                font-size: 37px;
+            }
+            .box__gallery{
+                h4{
+                    font-size: 18px;
+                }
+                p{
+                    line-height: 21px;
+                }
+            }
+        }
+    }
+}
