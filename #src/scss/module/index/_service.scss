@@ -84,4 +84,16 @@
            }
         }
     }
+    .service__box{
+        padding: 60px 0;
+        flex-direction: column;
+       .service__box_cart{
+        margin-top: 30px;
+       }
+        h3{
+            width: 30%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
 }

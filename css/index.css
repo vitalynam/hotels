@@ -682,15 +682,44 @@ h2 {
   }
   .recomendation .container .recomendation__slider {
     margin-right: 0;
-    width: 400px;
-    height: 300px;
+    max-width: 300px;
+    max-height: 250px;
+    margin-left: 13%;
   }
   .recomendation .container .recomendation_slider-absolute {
     left: 48%;
   }
   .recomendation .container .recomendation_slider-absolute .recomendation__slider_two {
-    width: 350px;
-    height: 250px;
+    max-width: 250px;
+    max-height: 200px;
+  }
+}
+@media (max-width: 680px) {
+  .recomendation .container .recomendation__slider {
+    margin-right: 0;
+    max-width: 300px;
+    max-height: 250px;
+    margin-left: 10%;
+  }
+  .recomendation .container .recomendation_slider-absolute {
+    left: 48%;
+  }
+  .recomendation .container .recomendation_slider-absolute .recomendation__slider_two {
+    max-width: 250px;
+    max-height: 200px;
+  }
+}
+@media (max-width: 600px) {
+  .recomendation .container .recomendation__slider {
+    margin-left: 4%;
+  }
+}
+@media (max-width: 550px) {
+  .recomendation .container .recomendation__slider {
+    margin-left: 0%;
+  }
+  .recomendation .container .recomendation_slider-absolute {
+    left: 40%;
   }
 }
 #awards {
@@ -718,6 +747,8 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -782,10 +813,23 @@ h2 {
   opacity: 1;
 }
 
-@media (max-width: 1000px) {
-  #awards .container {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+@media (max-width: 750px) {
+  .awards__cartbox {
+    width: 50%;
+  }
+  .awards__cartbox .awards_cart {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 500px) {
+  .awards__cartbox {
+    width: 100%;
+  }
+  .awards__cartbox .awards_cart {
+    margin-bottom: 50px;
+  }
+  .awards__cartbox .awards_cart .awards__img_wrap {
+    width: 100px;
   }
 }
 .service__section {
@@ -885,6 +929,22 @@ h2 {
   .service__section .service__img img {
     -o-object-fit: cover;
        object-fit: cover;
+  }
+
+  .service__box {
+    padding: 60px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .service__box .service__box_cart {
+    margin-top: 30px;
+  }
+  .service__box h3 {
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 .footer {

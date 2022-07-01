@@ -20,6 +20,7 @@
     
     .container{
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
         width: 100%;
@@ -73,18 +74,25 @@
 
 
 
-@media (max-width: 1000px){
-    #awards{
-        
-        .awards__title{
-
-            h2{
-                
-            }
+@media (max-width: 750px){
+   
+    .awards__cartbox{
+        width: 50%;
+        .awards_cart{
+            margin-bottom: 60px;
         }
-        
-        .container{
-            flex-wrap: wrap;
+    }
+    
+}
+@media (max-width: 500px){
+   
+    .awards__cartbox{
+        width: 100%;
+        .awards_cart{
+            margin-bottom: 50px;
+            .awards__img_wrap{
+                width: 100px;
+            }
         }
     }
     
