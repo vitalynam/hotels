@@ -604,6 +604,62 @@ h2 {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 1090px) {
+  .success_info {
+    padding: 14px 6px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .success_info h3 {
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 45px;
+  }
+  .success_info h3 span {
+    font-weight: 600;
+  }
+}
+@media (max-width: 1000px) {
+  .success__item_absolute p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .success_info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
+  }
+}
+@media (max-width: 750px) {
+  .success__title h2 {
+    font-size: 35px;
+  }
+
+  .success__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .success__box .success__item {
+    width: 300px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+  }
+  .success__box .success__item:last-child {
+    margin-bottom: 0;
+  }
+}
 .footer {
   background-image: url(./../images/footer.jpg);
   background-repeat: no-repeat;
