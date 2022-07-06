@@ -18,6 +18,7 @@ body{
 }
 body._lock{
     overflow: hidden;
+    height: 0;
 }
 main{
     flex: 1 1 auto;
@@ -33,6 +34,10 @@ main._lock{
     margin: 0 auto;
     position: relative;
     // overflow: hidden;
+}
+section{
+    padding-right: 15px;
+    padding-left: 15px;
 }
 .container{
     max-width: 1200px;

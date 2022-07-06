@@ -20,6 +20,7 @@ body {
 
 body._lock {
   overflow: hidden;
+  height: 0;
 }
 
 main {
@@ -44,6 +45,11 @@ main._lock {
           flex-direction: column;
   margin: 0 auto;
   position: relative;
+}
+
+section {
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .container {
@@ -101,7 +107,7 @@ h2 {
 
 .header__nav {
   width: 100%;
-  background-color: rgb(95, 7, 7);
+  background-color: rgba(255, 255, 255, 0.88);
   position: absolute;
   left: 0;
   top: 0;

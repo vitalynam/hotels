@@ -38,3 +38,52 @@
 .ventures__item._active{
     transform: translateY(0);
 }
+
+@media (max-width: 1100px) {
+    .ventures__item{
+        .ventures__img{
+            min-width: 200px;
+            height: auto;
+        }
+        .ventures__info{
+            p{
+                width: 230px;
+            }
+        }
+    }
+}
+@media (max-width: 970px) {
+    .ventures__item{
+        .ventures__info{
+            p{
+                width: 200px;
+            }
+        }
+    }
+}
+@media (max-width: 910px) {
+    .ventures__item{
+        width: 100%;
+        margin: 0 auto;
+        .ventures__info{
+            p{
+                width: 300px;
+            }
+        }
+        .ventures__img{
+            min-width: 200px;
+            height: 200px;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .ventures__item{
+        width: 100%;
+        margin: 0 auto;
+        .ventures__info{
+            p{
+                width: 200px;
+            }
+        }
+    }
+}

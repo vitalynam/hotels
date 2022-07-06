@@ -18,3 +18,26 @@
         padding: 0 15px;
     }
 }
+@media (max-width: 700px){
+    .where__box{
+        margin-top: 50px;
+        margin-bottom: 0;
+        flex-direction: column;
+        h2{
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        p{
+            line-height: 22px;
+            font-size: 13px;
+        }
+    
+        .where__img_wrap{
+            width: 100%;
+            padding: 0;
+            img{
+                object-fit: contain;
+            }
+        }
+    }
+}
