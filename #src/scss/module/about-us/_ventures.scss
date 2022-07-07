@@ -10,7 +10,7 @@
     width: 49.7%;
     display: flex;
     background-color: #f5f5f5;
-    transform: translateY(70%);
+    transform: translateY(40%);
 
     .ventures__img{
         width: 250px;
@@ -83,6 +83,22 @@
         .ventures__info{
             p{
                 width: 200px;
+            }
+        }
+    }
+}
+@media (max-width: 550px) {
+    .ventures__item{
+        display: flex;
+        flex-direction: column;
+        .ventures__img{
+            width: 100%;
+            height: auto;
+        }
+        .ventures__info{
+            p{
+                width: 100%;
+                line-height: 20px;
             }
         }
     }

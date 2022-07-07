@@ -1,4 +1,5 @@
 .project{
+    padding: 0;
     .container{
         margin-top: 60px;
     }
@@ -36,8 +37,8 @@
         .project__info{
             color: #7D5673;
             text-align: right;
+            margin-right: 15px;
             transform: translateX(-100%);
-
             h3{
                 font-size: 30px;
                 font-weight: 600;
@@ -61,4 +62,39 @@
 .project__img{
     width: 560px;
     height: 390px;
+}
+
+
+@media (max-width: 910px){
+    .project__container{
+        .project__items{
+            .project__images{
+                justify-content: space-around;
+                .project__img_wrap{
+                    width: 43%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .project__img{
+        width: 50%;
+        height: 100%;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 600px){
+    .project__container{
+        flex-direction: column-reverse;
+        .project__items{
+            width: 100%;
+        }
+    }
+    .project__img{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 25px;
+        padding: 0 15px;
+    }
 }

@@ -209,6 +209,7 @@
     .recomendation{
         margin-bottom: 80px;
         .container{
+            padding: 0;
             flex-direction: column;
                 .recomendation__box{
                     margin-left: auto;
@@ -221,7 +222,7 @@
                         align-items: center;
                         justify-content: space-around;
                         h2{
-                            font-size: 35px;
+                            font-size: 30px;
                             margin: 0;
                             text-align: center;
                             
@@ -253,19 +254,19 @@
 @media (max-width: 680px){
     .recomendation{
         .container{
-                .recomendation__slider{
-                    margin-right: 0;
-                    max-width: 300px;
-                    max-height: 250px;
-                    margin-left: 10%;
-                }
-                .recomendation_slider-absolute{
-                    left: 48%;
-                    .recomendation__slider_two{
-                        max-width: 250px;
-                        max-height: 200px;
-                     }
-                }
+            .recomendation__slider{
+                margin-right: 0;
+                max-width: 300px;
+                max-height: 250px;
+                margin-left: 10%;
+            }
+            .recomendation_slider-absolute{
+                left: 48%;
+                .recomendation__slider_two{
+                    max-width: 250px;
+                    max-height: 200px;
+                    }
+            }
                 
             }
         }
@@ -274,9 +275,9 @@
 @media (max-width: 600px){
     .recomendation{
         .container{
-                .recomendation__slider{
-                    margin-left: 4%;
-                }
+            .recomendation__slider{
+                margin-left: 4%;
+            }
             }
         }
     
@@ -289,6 +290,33 @@
             }
             .recomendation_slider-absolute{
                 left: 40%;
+            }
+        }
+    }
+    
+}
+@media (max-width: 430px){
+    .recomendation{
+        .container{
+            .recomendation__slider{
+                width: 250px;
+                height: 200px;
+            }
+            .recomendation_slider-absolute{
+                left: 30%;
+                top: 70%;
+                .recomendation__slider_two {
+                    width: 200px;
+                    height: 150px;
+                }
+            }
+            .recomendation__box{
+                .box__container{
+                    flex-direction: column;
+                    h2{
+                        margin-bottom: 30px;
+                    }
+                }
             }
         }
     }

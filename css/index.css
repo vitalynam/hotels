@@ -55,8 +55,6 @@ section {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 button, input, a, h1, h2, h3, h4, h5, h6 {
@@ -431,6 +429,17 @@ h2 {
     font-weight: bold;
   }
 }
+@media (max-width: 450px) {
+  .header-slide h1, .header-slide h2 {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  .header-pagination {
+    top: 250px;
+  }
+}
 .recomendation {
   margin-bottom: 80px;
 }
@@ -656,6 +665,7 @@ h2 {
     margin-bottom: 80px;
   }
   .recomendation .container {
+    padding: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -679,7 +689,7 @@ h2 {
         justify-content: space-around;
   }
   .recomendation .container .recomendation__box .box__container h2 {
-    font-size: 35px;
+    font-size: 30px;
     margin: 0;
     text-align: center;
   }
@@ -726,6 +736,29 @@ h2 {
   }
   .recomendation .container .recomendation_slider-absolute {
     left: 40%;
+  }
+}
+@media (max-width: 430px) {
+  .recomendation .container .recomendation__slider {
+    width: 250px;
+    height: 200px;
+  }
+  .recomendation .container .recomendation_slider-absolute {
+    left: 30%;
+    top: 70%;
+  }
+  .recomendation .container .recomendation_slider-absolute .recomendation__slider_two {
+    width: 200px;
+    height: 150px;
+  }
+  .recomendation .container .recomendation__box .box__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .recomendation .container .recomendation__box .box__container h2 {
+    margin-bottom: 30px;
   }
 }
 #awards {
@@ -838,6 +871,13 @@ h2 {
     width: 100px;
   }
 }
+.service {
+  padding: 0;
+}
+.service .container {
+  padding: 0;
+}
+
 .service__section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -854,6 +894,7 @@ h2 {
 }
 .service__section .service__text p {
   text-align: center;
+  padding: 0 15px;
 }
 .service__section .service__text._active {
   opacity: 1;
@@ -878,8 +919,8 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 80px 0;
-  -webkit-transform: translateY(40%);
-          transform: translateY(40%);
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
 }
 .service__box_cart {
   text-align: center;
@@ -1043,7 +1084,7 @@ h2 {
   color: white;
   font-size: 14px;
   padding: 15px;
-  width: 80%;
+  width: 100%;
   border: none;
   border-radius: 5px;
 }

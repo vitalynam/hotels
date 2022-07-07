@@ -55,8 +55,6 @@ section {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 button, input, a, h1, h2, h3, h4, h5, h6 {
@@ -318,16 +316,23 @@ h2 {
 }
 .header__title {
   width: 100%;
-  height: 400px;
+  height: 70vh;
   background-image: url(./../images/banner.jpg);
   background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .header__title h1 {
   font-size: 50px;
   font-weight: 700;
   color: #FFF;
-  text-align: center;
-  line-height: 400px;
   text-transform: uppercase;
 }
 
@@ -418,11 +423,14 @@ h2 {
   display: block;
   font-size: 18px;
   margin-bottom: 10px;
+  margin-left: 15px;
 }
 .form select {
   width: 100%;
   padding: 10px 15px;
   margin-bottom: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
   font-weight: 600;
   outline: none;
   border: none;
@@ -522,7 +530,7 @@ h2 {
     color: #fff;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .booking .container {
     width: 100%;
   }
@@ -541,6 +549,10 @@ h2 {
     margin-bottom: 10px;
   }
 }
+section {
+  padding: 0;
+}
+
 .address {
   padding-top: 1px;
   padding-bottom: 100px;
@@ -792,7 +804,7 @@ h2 {
   color: white;
   font-size: 14px;
   padding: 15px;
-  width: 80%;
+  width: 100%;
   border: none;
   border-radius: 5px;
 }
