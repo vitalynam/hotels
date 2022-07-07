@@ -182,6 +182,8 @@ h2 {
 
   .header__nav {
     position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .header__nav::after {
     content: "";
@@ -316,7 +318,7 @@ h2 {
 }
 .header__title {
   width: 100%;
-  height: 70vh;
+  height: 400px;
   background-image: url(./../images/banner.jpg);
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -362,9 +364,14 @@ h2 {
 .where__box h2 {
   margin-top: 0;
   text-align: left;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .where__box p {
   line-height: 30px;
+  width: 500px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .where__box .where__img_wrap {
   width: 570px;
@@ -372,6 +379,11 @@ h2 {
   padding: 0 15px;
 }
 
+@media (max-width: 800px) {
+  .where__box p {
+    width: 300px;
+  }
+}
 @media (max-width: 700px) {
   .where__box {
     margin-top: 50px;
@@ -384,10 +396,13 @@ h2 {
   .where__box h2 {
     font-size: 30px;
     margin-bottom: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .where__box p {
     line-height: 22px;
     font-size: 13px;
+    width: 100%;
   }
   .where__box .where__img_wrap {
     width: 100%;
@@ -412,6 +427,7 @@ h2 {
 }
 .booking h2 {
   margin-top: 0;
+  padding-left: 15px;
   color: #fff;
   text-align: left;
   font-size: 35px;
@@ -419,6 +435,9 @@ h2 {
   margin-bottom: 50px;
 }
 
+.form {
+  padding: 0 15px;
+}
 .form span {
   display: block;
   font-size: 18px;
@@ -530,19 +549,20 @@ h2 {
     color: #fff;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .booking .container {
     width: 100%;
   }
   .booking h2 {
     font-size: 30px;
   }
+  .booking .form span {
+    text-align: center;
+  }
   .booking .form .cuisine__box {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    text-align: center;
   }
   .booking .form .cuisine__box div {
     width: 50%;
@@ -955,6 +975,17 @@ section {
   }
   .footer__box form input {
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .footer__box h4 {
+    font-size: 25px;
+  }
+  .footer__box p {
+    font-size: 14px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 .btn__up {

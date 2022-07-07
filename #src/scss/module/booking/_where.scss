@@ -7,15 +7,27 @@
     h2{
         margin-top: 0;
         text-align: left;
+        padding-right: 15px;
+        padding-left: 15px;
     }
     p{
         line-height: 30px;
+        width: 500px;
+        padding-right: 15px;
+        padding-left: 15px;
     }
 
     .where__img_wrap{
         width: 570px;
         height: 290px;
         padding: 0 15px;
+    }
+}
+@media (max-width: 800px){
+    .where__box{
+        p{
+            width: 300px;
+        }
     }
 }
 @media (max-width: 700px){
@@ -26,10 +38,13 @@
         h2{
             font-size: 30px;
             margin-bottom: 20px;
+            padding-right: 15px;
+            padding-left: 15px;
         }
         p{
             line-height: 22px;
             font-size: 13px;
+            width: 100%;
         }
     
         .where__img_wrap{

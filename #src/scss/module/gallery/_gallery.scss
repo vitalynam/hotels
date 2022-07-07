@@ -32,3 +32,13 @@
         } 
     }
 }
+@media (max-width: 510px){
+    .gallery__box{
+        flex-direction: column;
+        .gallery__img{
+            li{
+                margin-bottom: 2px;
+            }
+        }
+    }
+}

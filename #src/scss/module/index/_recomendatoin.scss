@@ -303,7 +303,7 @@
                 height: 200px;
             }
             .recomendation_slider-absolute{
-                left: 30%;
+                left: 46%;
                 top: 70%;
                 .recomendation__slider_two {
                     width: 200px;
@@ -317,6 +317,16 @@
                         margin-bottom: 30px;
                     }
                 }
+            }
+        }
+    }
+    
+}
+@media (max-width: 380px){
+    .recomendation{
+        .container{
+            .recomendation_slider-absolute{
+                left: 30%;
             }
         }
     }

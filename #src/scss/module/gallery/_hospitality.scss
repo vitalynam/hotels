@@ -74,3 +74,26 @@
     text-align: left;
     padding-left: 65px;
 }
+
+@media (max-width: 500px){
+    .hospitality{
+        margin-bottom: 50px;
+        h2{
+            font-size: 30px;
+            margin-top: 50px;
+        }
+    }
+    .hospitality__box{
+        .hospitality__item{
+            height: 110px;
+            h4{
+                font-size: 20px;
+                padding-top: 47px;
+                text-align: center;
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+    }
+    
+}

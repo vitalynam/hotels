@@ -187,6 +187,8 @@ h2 {
 
   .header__nav {
     background-color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .header__nav::after {
     content: "";
@@ -744,7 +746,7 @@ h2 {
     height: 200px;
   }
   .recomendation .container .recomendation_slider-absolute {
-    left: 30%;
+    left: 46%;
     top: 70%;
   }
   .recomendation .container .recomendation_slider-absolute .recomendation__slider_two {
@@ -759,6 +761,11 @@ h2 {
   }
   .recomendation .container .recomendation__box .box__container h2 {
     margin-bottom: 30px;
+  }
+}
+@media (max-width: 380px) {
+  .recomendation .container .recomendation_slider-absolute {
+    left: 30%;
   }
 }
 #awards {
@@ -1235,6 +1242,17 @@ h2 {
   }
   .footer__box form input {
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .footer__box h4 {
+    font-size: 25px;
+  }
+  .footer__box p {
+    font-size: 14px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 .btn__up {

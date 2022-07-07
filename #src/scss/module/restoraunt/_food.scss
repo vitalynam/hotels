@@ -1,4 +1,5 @@
 .food{
+    padding: 0;
     .container{
         display: flex;
         align-items: center;
@@ -14,11 +15,15 @@
         margin-top: 0;
         text-align: left;
         margin-bottom: 50px;
+        padding-right: 15px;
+        padding-left: 15px;
     }
 
     p{
+        width: 500px;
         line-height: 25px;
-        padding: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
     }
 }
 .food__info._active{
@@ -36,4 +41,48 @@
 }
 .food__img._active{
     transform: translateX(0);
+}
+
+@media (max-width: 800px){
+    .food__info{
+        p{
+           width: 300px;
+        }
+    }
+}
+@media (max-width: 700px){
+    .food{
+        .container{
+            flex-direction: column;
+            margin-top: 50px;
+            margin-bottom: 0px;
+        }
+    }
+    .food__info{
+        h2{
+            margin-bottom: 15px;
+            font-size: 39px;
+        }
+        p{
+            margin-bottom: 15px;
+            width: 100%;
+        }
+    }
+    .food__img{
+        width: 100%;
+        height: auto;
+        transform: translateX(70%);
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+@media (max-width: 500px){
+    .food__info{
+        h2{
+            font-size: 30px;
+        }
+      
+    }
 }

@@ -67,6 +67,8 @@
 
     .header__nav{
         position: relative;
+        padding-left: 15px;
+        padding-right: 15px;
         &::after{
             content: "";
             position: absolute;

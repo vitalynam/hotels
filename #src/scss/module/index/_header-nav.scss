@@ -73,6 +73,8 @@
 
     .header__nav{
         background-color: #fff;
+        padding-left: 15px;
+        padding-right: 15px;
         &::after{
             content: "";
             position: absolute;
