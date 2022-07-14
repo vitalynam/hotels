@@ -32,12 +32,14 @@
         } 
     }
 }
-@media (max-width: 510px){
+@media (max-width: 600px){
     .gallery__box{
         flex-direction: column;
         .gallery__img{
             li{
                 margin-bottom: 2px;
+                width: 350px;
+                height: 250px;
             }
         }
     }
