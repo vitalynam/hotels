@@ -17,9 +17,6 @@ if(animateItems.length > 0){
             if(scrollY > (animateItemOffset - animateItemPoint) && scrollY < (animateItemOffset + animateItemHeight)){
                 animateItem.classList.add('_active');
             }
-            // else{
-            //     animateItem.classList.remove('_active');
-            // }
         }
     }
     function offset(el){
